@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  padding: .5em;
+  display: flex;
+  background: rgba(0,0,0,.04);
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: stretch;
+}
+
+.mdc-card {
+  flex: 1 1 30%;
+  justify-content: flex-start;
+  margin: .5em;
+  background: rgba(255,255,255,1);
+  min-width: 300px;
+}
+
+.mdc-card__primary+.mdc-card__supporting-text {
+  margin-top: 0;
+}
+
+.mdc-list--dense .mdc-list-item {
+  height: 30px;
+  white-space: normal;
+  line-height: 1em;
+}
+
+.searchbar {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.background-red {
+ background: #e57373;
+}
+.background-pink {
+  background: #f06292;
+}
+.background-purple {
+ background: #ba68c8;
+}
+.background-deep-purple {
+ background: #9575cd;
+}
+.background-indigo {
+ background: #7986cb; 
+}
+.background-blue {
+ background: #64b5f6;
+}
+.background-light-blue {
+ background: #4fc3f7;
+}
+.background-cyan {
+ background: #4dd0e1;
+}
+.background-teal {
+ background: #4db6ac;
+}
+.background-green {
+ background: #81c784;
+}
+.background-light-green {
+ background: #aed581;
+}
+.background-lime {
+ background: #dce775;
+}
+.background-yellow {
+ background: #fff176;
+}
+.background-amber {
+ background: #ffd54f;
+}
+.background-orange {
+ background: #ffb74d;
+}
+.background-deep-orange {
+ background: #ff8a65;
+}
+.background-brown {
+ background: #a1887f;
+}
+.background-grey {
+ background: #e0e0e0;
+}
+.background-blue-grey {
+ background: #90a4ae;
+}

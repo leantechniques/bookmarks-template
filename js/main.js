@@ -6,16 +6,20 @@ function getAllLinks() {
 }
 
 search.oninput = () => {
-  const searchText = search.value;
+  const searchText = search.value.toLowerCase();
   const links = getAllLinks();
   links.forEach(link => {
-    if(!link.href.includes(searchText) && !link.text.includes(searchText)) {
-      link.classList.add('hidden');
-    } else {
+    if(hasText(link, searchText)) {
       link.classList.remove('hidden');
+    } else {
+      link.classList.add('hidden');
     }
   })
 };
+
+function hasText(link, searchText) {
+    return !link.href.toLowerCase().includes(searchText) && !link.text.toLowerCase().includes(searchText)
+}
 
 searchIcon.onclick = () => {
   search.value = '';
